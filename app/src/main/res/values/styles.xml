@@ -13,4 +13,13 @@
         <item name="windowActionBar">false</item>
     </style>
 
+    <!-- Sretch UI-->
+    <style name="btn_start" parent="@android:style/Widget.Button">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_start</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
 </resources>
