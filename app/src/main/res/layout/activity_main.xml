@@ -7,6 +7,7 @@
     tools:context="strech.ina.lai.appstretch.activity.MainActivity">
 
     <Button
+        android:id="@+id/btnStart"
         android:layout_width="250dp"
         android:layout_height="65dp"
         android:text="Start"
