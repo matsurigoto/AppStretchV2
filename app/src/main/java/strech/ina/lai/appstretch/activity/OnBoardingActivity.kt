@@ -1,6 +1,6 @@
 package strech.ina.lai.appstretch.activity
 
-import android.content.Intent
+import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 
 import android.support.v4.app.Fragment
@@ -9,15 +9,19 @@ import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.activity_main.*
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
 
 import strech.ina.lai.appstretch.R
-import kotlinx.android.synthetic.main.activity_menu.*
-import kotlinx.android.synthetic.main.fragment_menu.view.*
+import kotlinx.android.synthetic.main.activity_on_boarding.*
+import kotlinx.android.synthetic.main.fragment_on_boarding.view.*
 
-class MenuActivity : AppCompatActivity() {
+class OnBoardingActivity : AppCompatActivity() {
 
     /**
      * The [android.support.v4.view.PagerAdapter] that will provide
@@ -28,21 +32,37 @@ class MenuActivity : AppCompatActivity() {
      * [android.support.v4.app.FragmentStatePagerAdapter].
      */
     private var mSectionsPagerAdapter: SectionsPagerAdapter? = null
+    private var dots: Array<ImageView>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
+        setContentView(R.layout.activity_on_boarding)
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = SectionsPagerAdapter(supportFragmentManager)
 
         // Set up the ViewPager with the sections adapter.
-        menu_container.adapter = mSectionsPagerAdapter
+        on_board_container.adapter = mSectionsPagerAdapter
+        showAnimation()
+    }
 
-        btn_on_borad.setOnClickListener{
-            _ -> startActivity( Intent( this, OnBoardingActivity::class.java))
-        }
+    fun showAnimation() {
+        val show = AnimationUtils.loadAnimation(this, R.anim.slide_up_anim)
+        btn_get_started.startAnimation(show)
+        show.setAnimationListener(object : Animation.AnimationListener {
+
+            override fun onAnimationStart(animation: Animation) {
+                btn_get_started.visibility = View.VISIBLE
+            }
+
+            override fun onAnimationRepeat(animation: Animation) {}
+
+            override fun onAnimationEnd(animation: Animation) {
+                btn_get_started.clearAnimation()
+            }
+
+        })
     }
 
     /**
@@ -70,7 +90,7 @@ class MenuActivity : AppCompatActivity() {
 
         override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                                   savedInstanceState: Bundle?): View? {
-            val rootView = inflater.inflate(R.layout.fragment_menu, container, false)
+            val rootView = inflater.inflate(R.layout.fragment_on_boarding, container, false)
             rootView.section_label.text = getString(R.string.section_format, arguments.getInt(ARG_SECTION_NUMBER))
             return rootView
         }
