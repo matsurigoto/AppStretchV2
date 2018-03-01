@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnStart.setOnClickListener{
+        btn_start.setOnClickListener{
             _ -> startActivity( Intent( this, MenuActivity::class.java))
         }
     }
