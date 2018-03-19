@@ -40,6 +40,10 @@ class MenuActivity : AppCompatActivity() {
         // Set up the ViewPager with the sections adapter.
         menu_container.adapter = mSectionsPagerAdapter
 
+        btn_posture_list.setOnClickListener{
+            _ -> startActivity( Intent( this, PostureListActivity::class.java))
+        }
+
         btn_on_borad.setOnClickListener{
             _ -> startActivity( Intent( this, OnBoardingActivity::class.java))
         }
