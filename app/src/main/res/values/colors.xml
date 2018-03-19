@@ -7,4 +7,8 @@
 
     <!-- Sretch UI-->
     <color name="colorBtnStart">#AA1B9AF7</color>
+
+    <!--Card view UI -->
+    <color name="colorTransparentBlack">#9b9b9b</color>
+    <color name="textColorPrimary">#FFFFFF</color>
 </resources>
