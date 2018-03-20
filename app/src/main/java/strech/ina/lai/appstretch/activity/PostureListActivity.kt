@@ -17,5 +17,4 @@ class PostureListActivity : AppCompatActivity() {
         //recycler_view_posture_list.adapter = this.postureListAdapter
         //recycler_view_posture_list.layoutManager = LinearLayoutManager(this)
     }
-
 }
