@@ -28,7 +28,8 @@
             android:name=".activity.OnBoardingActivity"
             android:label="@string/title_activity_on_boarding"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.PostureListActivity"></activity>
+        <activity android:name=".activity.PostureListActivity" />
+        <activity android:name=".activity.ActivityListActivity"></activity>
     </application>
 
 </manifest>
