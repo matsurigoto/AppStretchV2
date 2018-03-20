@@ -2,9 +2,7 @@ package strech.ina.lai.appstretch.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_posture_list.*
-import strech.ina.lai.appstretch.adapter.PostureListAdapter
+import strech.ina.lai.appstretch.adapters.PostureListAdapter
 import strech.ina.lai.appstretch.R
 
 class PostureListActivity : AppCompatActivity() {
