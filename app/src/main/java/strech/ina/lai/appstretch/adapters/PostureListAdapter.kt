@@ -1,8 +1,6 @@
-package strech.ina.lai.appstretch.adapter
+package strech.ina.lai.appstretch.adapters
 
 import android.content.Context
-import android.content.Intent
-import android.support.v4.content.ContextCompat.startActivity
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +9,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import strech.ina.lai.appstretch.R
-import strech.ina.lai.appstretch.activity.MenuActivity
 import strech.ina.lai.appstretch.models.Posture
 
 /**
