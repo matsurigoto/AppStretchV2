@@ -29,7 +29,8 @@
             android:label="@string/title_activity_on_boarding"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.PostureListActivity" />
-        <activity android:name=".activity.ActivityListActivity"></activity>
+        <activity android:name=".activity.ActivityListActivity" />
+        <activity android:name=".activity.PostureDetailActivity"></activity>
     </application>
 
 </manifest>
