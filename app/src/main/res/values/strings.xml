@@ -6,4 +6,8 @@
     <string name="title_activity_on_boarding">OnBoardingActivity</string>
     <string name="on_board_get_started">GET STARTED</string>
     <string name="menu_btn_on_board">On Borading</string>
+
+    <!--TextView-->
+    <string name="posture_detail_title">運動名稱</string>
+    <string name="posture_detail_time_title">時間：</string>
 </resources>
