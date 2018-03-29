@@ -34,7 +34,8 @@
         <activity android:name=".activity.ActivityDetailActivity" />
         <activity android:name=".activity.TipListActivity" />
         <activity android:name=".activity.TipDetailActivity" />
-        <activity android:name=".activity.AdvancedCourseListActivity"></activity>
+        <activity android:name=".activity.AdvancedCourseListActivity" />
+        <activity android:name=".activity.ConfirmOrderActivity"></activity>
     </application>
 
 </manifest>
