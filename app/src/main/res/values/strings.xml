@@ -10,4 +10,8 @@
     <!--TextView-->
     <string name="posture_detail_title">運動名稱</string>
     <string name="posture_detail_time_title">時間：</string>
+    <string name="textViewTipTitle">說明：</string>
+    <string name="textViewRoundTitle">Round：</string>
+    <string name="textViewCounterTitle">Count：</string>
+
 </resources>
