@@ -33,7 +33,8 @@
         <activity android:name=".activity.PostureDetailActivity" />
         <activity android:name=".activity.ActivityDetailActivity" />
         <activity android:name=".activity.TipListActivity" />
-        <activity android:name=".activity.TipDetailActivity"></activity>
+        <activity android:name=".activity.TipDetailActivity" />
+        <activity android:name=".activity.AdvancedCourseListActivity"></activity>
     </application>
 
 </manifest>
