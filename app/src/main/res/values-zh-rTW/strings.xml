@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AppStretch</string>
     <string name="title_activity_menu">MenuActivity</string>
@@ -7,17 +8,14 @@
     <string name="on_board_get_started">GET STARTED</string>
     <string name="menu_btn_on_board">On Borading</string>
 
-
-
-    <!-- English-->
-    <string name="posture_detail_title">Posture Name</string>
-    <string name="posture_detail_time_title">Time：</string>
-    <string name="textViewTipTitle">Description：</string>
+    <!--TextView-->
+    <string name="posture_detail_title">運動名稱</string>
+    <string name="posture_detail_time_title">時間：</string>
+    <string name="textViewTipTitle">說明：</string>
     <string name="textViewRoundTitle">Round：</string>
     <string name="textViewCounterTitle">Count：</string>
-    <string name="textViewItemTitle">Item</string>
-    <string name="textViewDescTitle">Description</string>
+    <string name="textViewItemTitle">購買品項</string>
+    <string name="textViewDescTitle">商品描述</string>
     <string name="btnConfirmOrder">Confirm Order</string>
     <string name="textViewPrivacyPolicy">I have read and accept the Terms of Service and Privacy Policy</string>
-
 </resources>
