@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "944576228453",
+    "firebase_url": "https://stretchapp-51bdf.firebaseio.com",
+    "project_id": "stretchapp-51bdf",
+    "storage_bucket": "stretchapp-51bdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944576228453:android:7d4beca4b40b8261",
+        "android_client_info": {
+          "package_name": "strech.ina.lai.appstretch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944576228453-2ftaduudpvsecl7nr51l4tofdqh686t5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMQ0nT_MZlPGaU0vVQPLheRVbKrMhvpOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
