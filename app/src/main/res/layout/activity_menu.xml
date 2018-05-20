@@ -37,18 +37,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/colorMenuBtnBackgrond"
                 android:id="@+id/btn_posture_list"/>
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/colorMenuBtnBackgrond"
                 android:id="@+id/btn_activity_list"
                 />
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/colorMenuBtnBackgrond"
                 android:layout_weight="1" />
         </LinearLayout>
 
@@ -61,17 +64,20 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/colorMenuBtnBackgrond"
                 android:layout_weight="1" />
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/colorMenuBtnBackgrond"
                 android:layout_weight="1" />
 
             <ImageButton
                 android:id="@+id/btn_on_borad"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/colorMenuBtnBackgrond"
                 android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>

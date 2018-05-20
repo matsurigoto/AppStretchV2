@@ -5,8 +5,10 @@
     <color name="colorAccent">#FF4081</color>
     <color name="white">#FFFFFF</color>
 
+
     <!-- Sretch UI-->
     <color name="colorBtnStart">#AA1B9AF7</color>
+    <color name="colorMenuBtnBackgrond">#1B9AF7</color>
 
     <!--Card view UI -->
     <color name="colorTransparentBlack">#9b9b9b</color>
