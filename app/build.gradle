@@ -1,45 +1,72 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 26
+    signingConfigs {
+        DI {
+            keyAlias 'DIStudio'
+            keyPassword 'aih122503'
+            storeFile file('C:/Users/Duran Hsieh/.android/DI.jks')
+            storePassword 'aih122503'
+        }
+    }
+    compileSdkVersion 27
     defaultConfig {
         applicationId "strech.ina.lai.appstretch"
-        minSdkVersion 21
-        targetSdkVersion 26
+        minSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.DI
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.DI
         }
     }
 }
 
 dependencies {
-    compile 'com.google.firebase:firebase-core:15.0.2'
-    compile 'com.android.support:recyclerview-v7:26.1.0'
-    compile 'com.android.support:cardview-v7:26.1.0'
-    compile 'com.github.kittinunf.fuel:fuel-android:1.12.1'
-    compile 'com.github.kittinunf.fuel:fuel-gson:1.12.1'
-    implementation("com.github.bumptech.glide:glide:4.6.1") {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:support-fragment:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:27.1.1'
+    implementation('com.github.bumptech.glide:glide:4.6.1') {
         exclude group: "com.android.support"
     }
-    implementation "com.android.support:support-fragment:26.1.0"
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.android.support:design:26.1.0'
+    // fuel
+    implementation 'com.github.kittinunf.fuel:fuel-android:1.12.1'
+    implementation 'com.github.kittinunf.fuel:fuel-gson:1.12.1'
+    // Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+    //implementation 'com.google.firebase:firebase-messaging:17.0.0'
+    // Google Sign In SDK (only required for Google Sign In)
+    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+    //implementation 'com.google.android.gms:play-services-ads:15.0.0'
+    // Firebase UI
+    // Used in FirebaseUIActivity.
+    implementation 'com.firebaseui:firebase-ui-auth:4.0.0'
+    // Facebook Android SDK (only required for Facebook Login)
+    // Used in FacebookLoginActivity.
+    implementation 'com.facebook.android:facebook-login:4.32.0'
+    implementation 'com.android.support:customtabs:27.1.1'
+    // Twitter Android SDK (only required for Twitter Login)
+    implementation 'com.twitter.sdk.android:twitter-core:3.2.0'
+    implementation 'com.twitter.sdk.android:twitter:3.2.0'
+    //kotlin
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation 'com.google.android.gms:play-services-ads:15.0.0'
 }
 apply plugin: 'com.google.gms.google-services'

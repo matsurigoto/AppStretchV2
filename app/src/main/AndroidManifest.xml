@@ -35,7 +35,11 @@
         <activity android:name=".activity.TipListActivity" />
         <activity android:name=".activity.TipDetailActivity" />
         <activity android:name=".activity.AdvancedCourseListActivity" />
-        <activity android:name=".activity.ConfirmOrderActivity"></activity>
+        <activity android:name=".activity.ConfirmOrderActivity" />
+        <activity
+            android:name=".activity.SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

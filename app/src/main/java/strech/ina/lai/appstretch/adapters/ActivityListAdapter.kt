@@ -17,7 +17,7 @@ import strech.ina.lai.appstretch.models.Activity
 class ActivityListAdapter(val context: Context, val activities: List<Activity>)
     : RecyclerView.Adapter<ActivityListAdapter.ViewHolder>() {
 
-    override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder?.bind(activities[position])
 
         holder?.itemView?.setOnClickListener(object : View.OnClickListener {
@@ -27,7 +27,7 @@ class ActivityListAdapter(val context: Context, val activities: List<Activity>)
         })
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent?.context).inflate(R.layout.cardview_sport, parent, false)
         return ViewHolder(view)
     }

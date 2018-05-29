@@ -8,12 +8,24 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:944576228453:android:7d4beca4b40b8261",
+        "mobilesdk_app_id": "1:944576228453:android:cd7ae06ed34c01c8",
         "android_client_info": {
           "package_name": "strech.ina.lai.appstretch"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "944576228453-3mgd78catq683ebigoc06g0af7jro1il.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "strech.ina.lai.appstretch",
+            "certificate_hash": "e63d9410418121328a865c419654bd5e5a4a2495"
+          }
+        },
+        {
+          "client_id": "944576228453-2ftaduudpvsecl7nr51l4tofdqh686t5.apps.googleusercontent.com",
+          "client_type": 3
+        },
         {
           "client_id": "944576228453-2ftaduudpvsecl7nr51l4tofdqh686t5.apps.googleusercontent.com",
           "client_type": 3
@@ -29,8 +41,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944576228453-2ftaduudpvsecl7nr51l4tofdqh686t5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

@@ -16,7 +16,7 @@ import strech.ina.lai.appstretch.models.Posture
  */
 class PostureListAdapter(val context: Context, val postures: List<Posture>)
     : RecyclerView.Adapter<PostureListAdapter.ViewHolder>() {
-    override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder?.bind(postures[position])
         holder?.itemView?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
@@ -25,7 +25,7 @@ class PostureListAdapter(val context: Context, val postures: List<Posture>)
         })
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent?.context).inflate(R.layout.cardview_sport, parent, false)
         return ViewHolder(view)
     }
