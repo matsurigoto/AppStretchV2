@@ -33,7 +33,7 @@ class SignInActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
         setContentView(R.layout.activity_sign_in)
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("786138603412-ljdqaq8sapgfijpa7tn54kek4trqv3cm.apps.googleusercontent.com")
+                .requestIdToken("944576228453-2ftaduudpvsecl7nr51l4tofdqh686t5.apps.googleusercontent.com")
                 .requestEmail()
                 .build()
 
