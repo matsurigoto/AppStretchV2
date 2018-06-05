@@ -1,5 +1,7 @@
 <resources>
     <string name="web_client_id">944576228453-2ftaduudpvsecl7nr51l4tofdqh686t5.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">260803761086759</string>
+    <string name="fb_login_protocol_scheme">606b475cd023988cc4e154d7a0ae90a2</string>
 
     <string name="app_name">AppStretch</string>
     <string name="title_activity_menu">MenuActivity</string>
