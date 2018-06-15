@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
 import android.os.Bundle
+import android.support.customtabs.CustomTabsClient.getPackageName
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -75,11 +76,11 @@ class MenuActivity : AppCompatActivity() {
      * A placeholder fragment containing a simple view.
      */
     class PlaceholderFragment : Fragment() {
-
         override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                                   savedInstanceState: Bundle?): View? {
             val rootView = inflater.inflate(R.layout.fragment_menu, container, false)
-            rootView.section_label.text = getString(R.string.section_format, arguments!!.getInt(ARG_SECTION_NUMBER))
+            val resourceId = resources.getIdentifier("banner0" + arguments!!.getInt(ARG_SECTION_NUMBER),"mipmap", context!!.packageName)
+            rootView.menu_banner.setImageResource(resourceId)
             return rootView
         }
 
