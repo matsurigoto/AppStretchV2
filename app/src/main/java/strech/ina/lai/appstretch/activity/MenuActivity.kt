@@ -46,6 +46,10 @@ class MenuActivity : AppCompatActivity() {
             _ -> startActivity( Intent( this, ActivityListActivity::class.java))
         }
 
+        btn_advanced_course_list.setOnClickListener{
+            _ -> startActivity( Intent( this, AdvancedCourseListActivity::class.java))
+        }
+
         btn_on_borad.setOnClickListener{
             _ -> startActivity( Intent( this, OnBoardingActivity::class.java))
         }

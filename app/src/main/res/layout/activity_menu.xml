@@ -55,6 +55,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorMenuBtnBackgrond"
                 android:layout_margin="1dp"
+                android:id="@+id/btn_advanced_course_list"
                 android:layout_weight="1" />
         </LinearLayout>
 
