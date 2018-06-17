@@ -20,11 +20,11 @@ class PostureListActivity : AppCompatActivity() {
         val postureList = ArrayList<Posture>()
         // fake data
         postureList.add(Posture(id = 0,title = "Posture1", imageUrl="https://distudio.blob.core.windows.net/study4tw/1525119511.75697.png",description = "Posture1"))
-        postureList.add(Posture(id = 0,title = "Posture2", imageUrl="https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg",description = "Posture2"))
-        postureList.add(Posture(id = 0,title = "Posture3", imageUrl="https://distudio.blob.core.windows.net/study4tw/1527510450.36769.png",description = "Posture3"))
-        postureList.add(Posture(id = 0,title = "Posture4", imageUrl="https://distudio.blob.core.windows.net/study4tw/1511737675.70031.jpg",description = "Posture4"))
-        postureList.add(Posture(id = 0,title = "Posture5", imageUrl="https://distudio.blob.core.windows.net/study4tw/1519341036.38332.png",description = "Posture5"))
-        postureList.add(Posture(id = 0,title = "Posture6", imageUrl="https://distudio.blob.core.windows.net/study4tw/1517584022.78193.jpg",description = "Posture6"))
+        postureList.add(Posture(id = 1,title = "Posture2", imageUrl="https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg",description = "Posture2"))
+        postureList.add(Posture(id = 2,title = "Posture3", imageUrl="https://distudio.blob.core.windows.net/study4tw/1527510450.36769.png",description = "Posture3"))
+        postureList.add(Posture(id = 3,title = "Posture4", imageUrl="https://distudio.blob.core.windows.net/study4tw/1511737675.70031.jpg",description = "Posture4"))
+        postureList.add(Posture(id = 4,title = "Posture5", imageUrl="https://distudio.blob.core.windows.net/study4tw/1519341036.38332.png",description = "Posture5"))
+        postureList.add(Posture(id = 5,title = "Posture6", imageUrl="https://distudio.blob.core.windows.net/study4tw/1517584022.78193.jpg",description = "Posture6"))
         
         this.postureListAdapter = PostureListAdapter(this, postureList)
 

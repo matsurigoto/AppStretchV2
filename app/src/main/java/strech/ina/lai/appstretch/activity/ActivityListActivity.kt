@@ -20,8 +20,8 @@ class ActivityListActivity : AppCompatActivity() {
 
         // fake data
         activityList.add(Activity(id = 0,title = "Activity1", imageUrl="https://distudio.blob.core.windows.net/study4tw/1527510069.76163.png",description = "Activity1"))
-        activityList.add(Activity(id = 0,title = "Activity2", imageUrl="https://distudio.blob.core.windows.net/study4tw/1527510425.1898.png",description = "Activity2"))
-        activityList.add(Activity(id = 0,title = "Activity3", imageUrl="https://distudio.blob.core.windows.net/study4tw/1527510450.36769.png",description = "Activity3"))
+        activityList.add(Activity(id = 1,title = "Activity2", imageUrl="https://distudio.blob.core.windows.net/study4tw/1527510425.1898.png",description = "Activity2"))
+        activityList.add(Activity(id = 2,title = "Activity3", imageUrl="https://distudio.blob.core.windows.net/study4tw/1527510450.36769.png",description = "Activity3"))
 
         this.activityListAdapter = ActivityListAdapter(this, activityList)
         recycler_view_activity_list.adapter = this.activityListAdapter
