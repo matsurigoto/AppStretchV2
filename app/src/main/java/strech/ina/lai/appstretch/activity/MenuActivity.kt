@@ -6,13 +6,10 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import android.support.v4.view.ViewPager
 import android.os.Bundle
-import android.support.customtabs.CustomTabsClient.getPackageName
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.activity_main.*
 
 import strech.ina.lai.appstretch.R
 import kotlinx.android.synthetic.main.activity_menu.*
