@@ -7,7 +7,7 @@ android {
         DI {
             keyAlias 'DIStudio'
             keyPassword 'aih122503'
-            storeFile file('C:/Users/Duran Hsieh/.android/DI.jks')
+            storeFile file('../DI.jks')
             storePassword 'aih122503'
         }
     }
