@@ -9,12 +9,13 @@
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="383dp"
-        android:layout_height="81dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
         android:layout_marginTop="486dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewtextViewCounterNumber" />
 
     <VideoView
         android:id="@+id/videoView"
@@ -33,6 +34,7 @@
 
 
     <View
+        android:id="@+id/view4"
         android:layout_width="match_parent"
         android:layout_height="2dip"
         android:layout_marginEnd="8dp"
@@ -47,68 +49,86 @@
         android:id="@+id/textViewTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="365dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="365dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonNext"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonPrev"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewRoundTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="426dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewRoundNumber"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textViewCounterTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="16dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="453dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textViewtextViewCounterNumber"
+        app:layout_constraintEnd_toStartOf="@+id/textViewtextViewCounterNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonStart" />
 
     <TextView
         android:id="@+id/textViewRoundNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="426dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textViewtextViewCounterNumber"
+        app:layout_constraintStart_toStartOf="@+id/textViewtextViewCounterNumber" />
 
     <TextView
         android:id="@+id/textViewtextViewCounterNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="188dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="453dp" />
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonNext"
+        app:layout_constraintStart_toEndOf="@+id/textViewCounterTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCounterTitle" />
 
     <ImageButton
         android:id="@+id/imageButtonPrev"
         android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonStart"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonStart"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textViewRoundNumber"
-        app:srcCompat="@drawable/btn_start"
-        tools:layout_editor_absoluteY="426dp" />
+        app:layout_constraintTop_toTopOf="@+id/imageButtonStart"
+        app:srcCompat="@drawable/btn_start" />
 
     <ImageButton
         android:id="@+id/imageButtonStart"
         android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCounterTitle"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonNext"
-        app:srcCompat="@drawable/btn_start"
-        tools:layout_editor_absoluteY="426dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonNext"
+        app:srcCompat="@drawable/btn_start" />
 
     <ImageButton
         android:id="@+id/imageButtonNext"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/btn_start"
-        tools:layout_editor_absoluteY="426dp" />
+        app:layout_constraintStart_toEndOf="@+id/textViewtextViewCounterNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimer"
+        app:srcCompat="@drawable/btn_start" />
 </android.support.constraint.ConstraintLayout>
