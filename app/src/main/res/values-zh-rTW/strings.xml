@@ -18,4 +18,67 @@
     <string name="textViewDescTitle">商品描述</string>
     <string name="btnConfirmOrder">Confirm Order</string>
     <string name="textViewPrivacyPolicy">I have read and accept the Terms of Service and Privacy Policy</string>
+
+    <!--Posture Context-->
+    <string name="posture01_title">肩夾放鬆</string>
+    <string name="posture01_description">雙手置於頭，肩夾往後往下收，注意不要聳肩</string>
+    <string name="posture02_title">三頭肌伸展</string>
+    <string name="posture02_description">右手放頭頂後方手心朝下，左手握住右手肘往左邊拉</string>
+    <string name="posture03_title">後三角肌伸展</string>
+    <string name="posture03_description">右手抬至90度搭肩，左手握住右手上臂，往內壓</string>
+    <string name="posture04_title">後三角肌伸展</string>
+    <string name="posture04_description">右手抬至90度搭肩，左手握住右手上臂，往內壓</string>
+    <string name="posture05_title">肩頸</string>
+    <string name="posture05_description">右手繞過頭頂將頭部往右肩靠近，左手向下延伸，盡量伸展左頸至左肩上方</string>
+    <string name="posture06_title">萬佛朝宗</string>
+    <string name="posture06_description">手指交握，掌心朝上，雙手高舉過頭，將手掌往上延伸，感覺手臂至身體外側伸展</string>
+    <string name="posture07_title">胸大肌伸展</string>
+    <string name="posture07_description">手肘彎曲90度與肩膀同高，前臂靠牆，上身直立慢慢靠近牆壁（注意不要彎腰），感覺前胸肌肉伸展</string>
+    <string name="posture08_title">肩膀前端</string>
+    <string name="posture08_description">膝蓋微彎站立，雙手於臀後往前推，肩膀下壓，伸展肩膀前端</string>
+    <string name="posture09_title">髂腰肌伸展</string>
+    <string name="posture09_description">右腳往前跨一大步，膝蓋與腳踝成一直線與地面垂直，左腳膝蓋著地，腳背伸平或踮腳皆可，屁股往前推，感覺大腿上方伸展</string>
+    <string name="posture10_title">阿基里斯腱伸展</string>
+    <string name="posture10_description">腳跟著地，腳尖向上抵住牆壁，上身前傾（注意不要彎腰）至小腿後方肌肉感覺到伸展時停住</string>
+    <string name="posture11_title">股二頭肌伸展</string>
+    <string name="posture11_description">平躺，右腳屈膝，左髖關節彎曲至90度後，將膝蓋盡量伸直，感覺大腿後側伸展</string>
+    <string name="posture12_title">鼠蹊部伸展</string>
+    <string name="posture12_description">兩腳合起，雙手握住腳趾，上身前傾，注意不要彎腰，感覺大腿內側伸展</string>
+    <string name="posture13_title">梨狀肌伸展</string>
+    <string name="posture13_description">右腳伸直，左腳跨過右腳貼平地面，右手抵在左大腿膝蓋外側往右壓，身體像左轉，感覺屈膝那邊的臀部伸展</string>
+    <string name="posture14_title">背肌與腿後肌伸展</string>
+    <string name="posture14_description">平躺，右腳彎曲，雙手置於大腿後側，將膝蓋盡量往身體靠近</string>
+    <string name="posture15_title">股四頭肌伸展</string>
+    <string name="posture15_description">手往後抓住腳踝，把腳跟往臀部的方向靠近，感覺大腿前側伸展</string>
+    <string name="posture16_title">大腿外側伸展</string>
+    <string name="posture16_description">側躺，上方的手抓著上方的腳踝往後拉，往地上靠近，感覺大腿外側伸展</string>
+
+    <!--Activity Context-->
+    <string-array name="run">
+        <item>跑步</item>
+    </string-array>
+    <string-array name="bike">
+        <item>腳踏車</item>
+    </string-array>
+    <string-array name="sit">
+        <item>久坐</item>
+    </string-array>
+    <string-array name="badminton">
+        <item>羽球</item>
+    </string-array>
+    <string-array name="baseball">
+        <item>棒壘球</item>
+    </string-array>
+    <string-array name="soccer">
+        <item>足球</item>
+    </string-array>
+    <string-array name="table_tennis">
+        <item>桌球</item>
+    </string-array>
+    <string-array name="tennis">
+        <item>網球</item>
+    </string-array>
+    <string-array name="volleyball">
+        <item>排球</item>
+    </string-array>
 </resources>
