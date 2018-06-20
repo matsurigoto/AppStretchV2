@@ -7,6 +7,7 @@ import strech.ina.lai.appstretch.adapters.PostureListAdapter
 import strech.ina.lai.appstretch.R
 import strech.ina.lai.appstretch.models.Posture
 import android.support.v7.widget.GridLayoutManager
+import strech.ina.lai.appstretch.utils.getString
 
 
 class PostureListActivity : AppCompatActivity() {
@@ -19,16 +20,18 @@ class PostureListActivity : AppCompatActivity() {
 
         val postureList = ArrayList<Posture>()
         // fake data
-        postureList.add(Posture(id = 0,title = "Posture1", imageUrl="https://distudio.blob.core.windows.net/study4tw/1525119511.75697.png",description = "Posture1"))
-        postureList.add(Posture(id = 1,title = "Posture2", imageUrl="https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg",description = "Posture2"))
-        postureList.add(Posture(id = 2,title = "Posture3", imageUrl="https://distudio.blob.core.windows.net/study4tw/1527510450.36769.png",description = "Posture3"))
-        postureList.add(Posture(id = 3,title = "Posture4", imageUrl="https://distudio.blob.core.windows.net/study4tw/1511737675.70031.jpg",description = "Posture4"))
-        postureList.add(Posture(id = 4,title = "Posture5", imageUrl="https://distudio.blob.core.windows.net/study4tw/1519341036.38332.png",description = "Posture5"))
-        postureList.add(Posture(id = 5,title = "Posture6", imageUrl="https://distudio.blob.core.windows.net/study4tw/1517584022.78193.jpg",description = "Posture6"))
-        
-        this.postureListAdapter = PostureListAdapter(this, postureList)
+        for (i in 1..16)
+        {
+            val title = getString("posture" + i.toString().padStart(2, '0') + "_title")
+            val imageUrl = getString("posture" + i.toString().padStart(2, '0') + "_url")
+            val description = getString("posture" + i.toString().padStart(2, '0') + "_description")
+            postureList.add(Posture(id = i,title = title, imageUrl=imageUrl, description = description))
+        }
 
+        this.postureListAdapter = PostureListAdapter(this, postureList)
         recycler_view_posture_list.adapter = this.postureListAdapter
         recycler_view_posture_list.layoutManager = GridLayoutManager(this, 2)
     }
+
+
 }

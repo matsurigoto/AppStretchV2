@@ -52,6 +52,22 @@
     <string name="posture15_description">手往後抓住腳踝，把腳跟往臀部的方向靠近，感覺大腿前側伸展</string>
     <string name="posture16_title">大腿外側伸展</string>
     <string name="posture16_description">側躺，上方的手抓著上方的腳踝往後拉，往地上靠近，感覺大腿外側伸展</string>
+    <string name="posture01_url">https://distudio.blob.core.windows.net/study4tw/1525119511.75697.png</string>
+    <string name="posture02_url">https://distudio.blob.core.windows.net/study4tw/1527510450.36769.png</string>
+    <string name="posture03_url">https://distudio.blob.core.windows.net/study4tw/1511737675.70031.jpg</string>
+    <string name="posture04_url">https://distudio.blob.core.windows.net/study4tw/1519341036.38332.png</string>
+    <string name="posture05_url">https://distudio.blob.core.windows.net/study4tw/1517584022.78193.jpg</string>
+    <string name="posture06_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
+    <string name="posture07_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
+    <string name="posture08_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
+    <string name="posture09_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
+    <string name="posture10_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
+    <string name="posture11_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
+    <string name="posture12_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
+    <string name="posture13_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
+    <string name="posture14_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
+    <string name="posture15_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
+    <string name="posture16_url">https://distudio.blob.core.windows.net/study4tw/1511809721.22344.jpg</string>
 
     <!--Activity Context-->
     <string-array name="run">
