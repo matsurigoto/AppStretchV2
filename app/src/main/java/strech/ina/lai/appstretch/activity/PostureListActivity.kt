@@ -7,6 +7,7 @@ import strech.ina.lai.appstretch.adapters.PostureListAdapter
 import strech.ina.lai.appstretch.R
 import strech.ina.lai.appstretch.models.Posture
 import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.RecyclerView
 import strech.ina.lai.appstretch.utils.getString
 
 
@@ -30,7 +31,7 @@ class PostureListActivity : AppCompatActivity() {
 
         this.postureListAdapter = PostureListAdapter(this, postureList)
         recycler_view_posture_list.adapter = this.postureListAdapter
-        recycler_view_posture_list.layoutManager = GridLayoutManager(this, 2)
+        recycler_view_posture_list.layoutManager = GridLayoutManager(this, 2) as RecyclerView.LayoutManager?
     }
 
 

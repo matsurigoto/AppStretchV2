@@ -15,5 +15,10 @@ class PostureDetailActivity : AppCompatActivity() {
 
         val adRequest = AdRequest.Builder().build()
         adViewPostureDetail!!.loadAd(adRequest)
+
+        val postureId:Int = intent.getIntExtra("postureId",0)
+        postDetialImageView.setImageResource(R.mipmap.banner01)
+        textPostureDetailTitle!!.setText("")
+        textPostureDetailTime!!.setText("")
     }
 }
