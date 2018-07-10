@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,31 +8,30 @@
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
-        android:layout_width="383dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="486dp"
+        android:layout_width="361dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         app:adSize="BANNER"
         app:adUnitId="@string/banner_ad_unit_id"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewtextViewCounterNumber" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <VideoView
         android:id="@+id/videoView"
-        android:layout_width="377dp"
-        android:layout_height="326dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        android:layout_width="378dp"
+        android:layout_height="332dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTimer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.275" />
 
 
     <View
@@ -42,9 +40,10 @@
         android:layout_height="2dip"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="412dp"
+        android:layout_marginTop="404dp"
         android:background="#1A000000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,86 +51,110 @@
         android:id="@+id/textViewTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="42dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginTop="365dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageButtonNext"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonPrev"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
 
     <TextView
         android:id="@+id/textViewRoundTitle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="428dp"
         android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textViewRoundNumber"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewCounterTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="11dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textViewtextViewCounterNumber"
-        app:layout_constraintEnd_toStartOf="@+id/textViewtextViewCounterNumber"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonStart" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewRoundTitle"
+        app:layout_constraintVertical_bias="0.065" />
 
     <TextView
         android:id="@+id/textViewRoundNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textViewtextViewCounterNumber"
-        app:layout_constraintStart_toStartOf="@+id/textViewtextViewCounterNumber" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewRoundTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
 
     <TextView
         android:id="@+id/textViewtextViewCounterNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="27dp"
-        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="108dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="20dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonNext"
-        app:layout_constraintStart_toEndOf="@+id/textViewCounterTitle"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCounterTitle" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewCounterTitle" />
 
     <ImageButton
         android:id="@+id/imageButtonPrev"
         android:layout_width="45dp"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="108dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButtonStart"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonStart"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewRoundNumber"
-        app:layout_constraintTop_toTopOf="@+id/imageButtonStart"
+        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/btn_start" />
 
     <ImageButton
         android:id="@+id/imageButtonStart"
         android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textViewCounterTitle"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonNext"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonNext"
-        app:srcCompat="@drawable/btn_start" />
+        android:layout_height="45dp"
+        android:layout_marginBottom="108dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/btn_start"
+        tools:layout_editor_absoluteX="263dp" />
 
     <ImageButton
         android:id="@+id/imageButtonNext"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="108dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButtonStart"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewtextViewCounterNumber"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTimer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/btn_start" />
 </android.support.constraint.ConstraintLayout>
