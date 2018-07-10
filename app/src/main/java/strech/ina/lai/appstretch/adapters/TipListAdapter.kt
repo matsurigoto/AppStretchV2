@@ -1,6 +1,7 @@
 package strech.ina.lai.appstretch.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import strech.ina.lai.appstretch.R
+import strech.ina.lai.appstretch.activity.TipDetailActivity
 import strech.ina.lai.appstretch.models.Tip
 
 /**
@@ -21,7 +23,9 @@ class TipListAdapter (val context: Context, val tips: List<Tip>)
         holder?.bind(tips[position])
         holder?.itemView?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-
+                val intent = Intent( context, TipDetailActivity::class.java)
+                intent.putExtra("TipId",tips[position].id)
+                context.startActivity(intent)
             }
         })
     }
