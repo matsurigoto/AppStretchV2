@@ -1,19 +1,17 @@
 package strech.ina.lai.appstretch.activity
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
-
+import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
-import strech.ina.lai.appstretch.R
 import kotlinx.android.synthetic.main.activity_menu.*
 import kotlinx.android.synthetic.main.fragment_menu.view.*
+import strech.ina.lai.appstretch.R
 
 class MenuActivity : AppCompatActivity() {
 
@@ -50,9 +48,19 @@ class MenuActivity : AppCompatActivity() {
             _ -> startActivity( Intent( this, AdvancedCourseListActivity::class.java))
         }
 
+        btn_tip_list.setOnClickListener{
+        _ -> startActivity( Intent( this, TipListActivity::class.java))
+        }
+
+        //        btn_setting_list.setOnClickListener{
+//            _ -> startActivity( Intent( this, SettingActivity::class.java))
+//        }
+
         btn_on_borad.setOnClickListener{
             _ -> startActivity( Intent( this, OnBoardingActivity::class.java))
         }
+
+
     }
 
     /**

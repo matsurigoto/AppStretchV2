@@ -9,17 +9,16 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import strech.ina.lai.appstretch.R
-import strech.ina.lai.appstretch.models.Activity
+import strech.ina.lai.appstretch.models.Tip
 
 /**
  * Created by DuranHsieh on 2018/3/29.
  */
-class TipListAdapter (val context: Context, val activities: List<Activity>)
+class TipListAdapter (val context: Context, val tips: List<Tip>)
     : RecyclerView.Adapter<TipListAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder?.bind(activities[position])
-
+        holder?.bind(tips[position])
         holder?.itemView?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
 
@@ -32,15 +31,15 @@ class TipListAdapter (val context: Context, val activities: List<Activity>)
         return ViewHolder(view)
     }
 
-    override fun getItemCount(): Int = this.activities.count()
+    override fun getItemCount(): Int = this.tips.count()
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val title = itemView?.findViewById<TextView>(R.id.sport_item_info)
         private val imageView = itemView?.findViewById<ImageView>(R.id.sport_item_icon)
 
-        fun bind(activities: Activity) {
-            title.text = activities.title
-            Glide.with(context).load(activities.imageUrl).into(imageView);
+        fun bind(tips: Tip) {
+            title.text = tips.title
+            Glide.with(context).load(tips.imageUrl).into(imageView);
         }
     }
 }
