@@ -25,6 +25,9 @@
     <string name="textViewPrivacyPolicy">I have read and accept the Terms of Service and Privacy Policy</string>
     <string name="title_activity_sign_in">SignInActivity</string>
 
+    <!-- Activity Detail -->
+    <string name="title_activity_detail">Stretch</string>
+
     <!--Posture Context-->
     <string name="posture01_title">肩夾放鬆</string>
     <string name="posture01_description">雙手置於頭，肩夾往後往下收，注意不要聳肩</string>
